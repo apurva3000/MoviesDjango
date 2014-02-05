@@ -1,0 +1,100 @@
+[
+{
+    "pk": 1,
+    "model": "moviesApp.Person",
+    "fields": {
+        "name":	"Quentin Tarantino",
+		"dob":	"March 27, 1963"
+    }
+},
+{
+    "pk": 1,
+    "model": "moviesApp.Director",
+    "fields": {
+        "awards": "Won 2 Oscars",
+		"total_credits": 30
+    }
+},
+{
+    "pk": 2,
+    "model": "moviesApp.Person",
+    "fields": {
+        "name":	"Christopher Nolan",
+		"dob":	"July 30, 1970"
+    }
+},
+{
+    "pk": 2,
+    "model": "moviesApp.Director",
+    "fields": {
+        "awards": "Nominated for 3 Oscars",
+		"total_credits": 10
+    }
+},
+
+{
+    "pk": 3,
+    "model": "moviesApp.Person",
+    "fields": {
+        "name":	"Leonardo DiCaprio",
+		"dob":	"November 11, 1974"
+    }
+},
+{
+    "pk": 3,
+    "model": "moviesApp.Actor",
+    "fields": {
+        "awards": "Nominated for 4 Oscars",
+		"total_credits": 35
+    }
+},
+
+{
+    "pk": 4,
+    "model": "moviesApp.Person",
+    "fields": {
+        "name":	"Joseph Gordon-Levitt",
+		"dob":	"February 17, 1981"
+    }
+},
+{
+    "pk": 4,
+    "model": "moviesApp.Actor",
+    "fields": {
+        "awards": "Nominated for 2 Golden Globes",
+		"total_credits": 63
+    }
+},
+
+{
+    "pk": 1,
+    "model": "moviesApp.Movie",
+    "fields": {
+        "title": "Inception",
+		"rel_date": " 16 July 2010 (USA)",
+		"imdb_score": 8.8,
+		"genre": "Action,Sci-fi,Thriller",
+		"actor": [3,4],
+		"director":2
+    }
+},
+{
+    "pk": 1,
+    "model": "moviesApp.Role",
+    "fields": {
+        "character": "Cobb",
+		"movie": 1,
+		"actor": 3
+    }
+},
+{
+    "pk": 2,
+    "model": "moviesApp.Role",
+    "fields": {
+        "character": "Arthur",
+		"movie": 1,
+		"actor": 4
+    }
+}
+
+] 

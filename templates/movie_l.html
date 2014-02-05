@@ -1,0 +1,13 @@
+<h1>Movies</h1>
+
+<ul>
+  {% for movie in object_list %}
+    <li class="movie"><b>Title:</b>{{ movie.title }}, <b>Release Date:</b>{{movie.rel_date}}, <b>Genre: </b>{{ movie.genre }}, <b>Director: </b>{{movie.director.name}},
+	<b>Actors: </b>
+	{% for actor in movie.actor.all %} <!--- using .all solves the problem ---->
+	{{actor.name}}, 
+	{% endfor %}
+	<b>IMDB Score:</b> {{movie.imdb_score}}
+	</li>
+  {% endfor %}
+</ul>

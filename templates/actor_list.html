@@ -1,0 +1,12 @@
+<h1>Actors</h1>
+
+<ul>
+  {% for actor in object_list %}
+    <li class="actor"><b>Name:</b>{{ actor.name }}, <b>DOB:</b>{{actor.dob}}, <b>Awards: </b>{{ actor.awards }}, <b>Total Credits: </b>{{actor.total_credits}},
+	<b>Roles: </b>
+	{% for role in actor.role_set.all %} <!--- using .all solves the problem ---->
+	{{role.character}}, 
+	{% endfor %}
+	</li>
+  {% endfor %}
+</ul>

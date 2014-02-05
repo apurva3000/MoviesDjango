@@ -1,0 +1,7 @@
+<h1>{{movie}} Characters List</h1>
+<ul>
+  {% for role in queryset %}
+    <li class="role">Character: {{role.character}}, Actor: {{role.actor.name}}
+	</li>
+  {% endfor %}
+</ul>
